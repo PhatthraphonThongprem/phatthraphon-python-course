@@ -24,7 +24,7 @@ my_float = 3.14
 my_boolean = False
 
 # Use type() to see the data type
-print("Type of my_string:", type(my_string))
+print("Type of my_string:", type(my_string)) #type คือ ตัวบอกประเภท ว่า typeนี้ คือประเภทอะไร
 print("Type of my_integer:", type(my_integer))
 print("Type of my_float:", type(my_float))
 print("Type of my_boolean:", type(my_boolean))
@@ -49,9 +49,9 @@ print("Addition:", num1 + num2)
 print("Subtraction:", num1 - num2)
 print("Multiplication:", num1 * num2)
 print("Division:", num1 / num2)
-print("Integer Division:", num1 // num2)
-print("Remainder (Modulo):", num1 % num2)
-print("Power:", num1 ** num2)
+print("Integer Division:", num1 // num2) # ใช้ // เพื่อใช้ให้หาแค่ int
+print("Remainder (Modulo):", num1 % num2) #เอาเศษ
+print("Power:", num1 ** num2) #ยกกำลัง
 
 # Exercise 5: Variable Reassignment
 # Start with a variable and change its value
@@ -77,16 +77,16 @@ print("a =", a, "b =", b, "c =", c)
 # Complete the following assignments:
 
 # String variable containing your favorite color
-favorite_color = 
+favorite_color = "blue"
 
 # Integer variable with the current year
-current_year = 
+current_year = "2026"
 
 # Float variable with your favorite number (with decimal)
-favorite_number = 
+favorite_number = "9"
 
 # Boolean variable indicating if you like pizza
-likes_pizza = 
+likes_pizza = "No"
 
 # Print all variables with descriptive messages
 print("My favorite color is:", favorite_color)
