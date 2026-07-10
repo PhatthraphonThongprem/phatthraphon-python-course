@@ -322,7 +322,7 @@ tax_percent = float(input("Enter tax %: "))
 # TODO: Calculate subtotal
 # TODO: Calculate discount amount
 # TODO: Calculate price after discount
-# TODO: Calculate tax amount
+# TODO: Calculate tax amount //ภาษี
 # TODO: Calculate final total
 # TODO: Display itemized receipt
 '''
