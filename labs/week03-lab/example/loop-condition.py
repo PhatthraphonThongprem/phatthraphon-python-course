@@ -9,9 +9,14 @@
 # demo_for_basic.py
 print("=== Demo 1: Basic For Loop ===")
 
+#Ex. 
+print(range(5))
+print(range(1, 5))
+print(range(1, 5, 2))
+
 # Loop ผ่านตัวเลข
 print("นับจาก 1 ถึง 5:")
-for i in range(1, 6):
+for i in range(1, 6): 
     print(f"รอบที่ {i}")
 
 print("\nนับแบบขั้น:")
@@ -33,14 +38,18 @@ print("=" * 50)
 # =============================================================================
 
 # demo_while_basic.py
-print("=== Demo 2: Basic While Loop ===")
+                          print("=== Demo 2: Basic While Loop ===")
 
 # นับด้วย while
 print("นับจาก 1 ถึง 5 ด้วย while:")
 count = 1
-while count <= 5:
+while count <= 5: # ระวังไว้ให้ดีเขียนดีๆ เดะมันลูปไม่จบ
     print(f"รอบที่ {count}")
     count += 1  # เพิ่มค่า count
+
+#Ex.
+for i in range(5):
+    print(f"รอบที่ {i}")
 
 print("\nDemo while กับ input (จำลอง):")
 # จำลองการใช้งานโดยไม่ต้อง input จริง
@@ -60,13 +69,13 @@ print("=" * 50)
 # demo_loops_conditions.py
 print("=== Demo 3: Loops + Conditions ===")
 
-# หาเลขคู่และคี่
+# หาเลขคู่และคี่ ระวังออก Midtrem
 print("แยกเลขคู่-คี่:")
 for num in range(1, 11):
     if num % 2 == 0:
-        print(f"{num} เป็นเลขคู่")
+        print(f"{num} เป็นเลขคู่") # 2 4 6 8 10
     else:
-        print(f"{num} เป็นเลขคี่")
+        print(f"{num} เป็นเลขคี่") # 1 3 5 7 9 11
 
 print("\nDemo เกมทายตัวเลข (จำลอง):")
 import random
