@@ -1,3 +1,4 @@
+
 """ เขียน function ชื่อ welcome_message ที่มีคุณสมบัติดังนี้:
 
 รับ parameter 2 ตัว คือ name และ course
@@ -7,7 +8,16 @@ return ข้อความต้อนรับในรูปแบบ string
 """
 def welcome_message(name, course):
     # Your Problem 1 solution
-    pass
+   
+    """Greets a person by name and course"""
+    print(f"Welcome {name} to {course} class !")
+
+print("Calling welcome_message with different names and course:")
+welcome_message("Alice" ,"Python")
+welcome_message("Bob", "Data Science")
+welcome_message("Charlie", "AI")
+print()
+
 
 """ เขียน function ชื่อ calculate_circle ที่มีคุณสมบัติดังนี้:
 
@@ -18,7 +28,19 @@ return dictionary ที่มี area และ circumference
 
 def calculate_circle(radius):
     # Your Problem 2 solution
-    pass
+    """Calculates circle area and circumference"""
+    pi = 3.14159
+    area = pi * radius * radius
+    circumference = 2 * pi * radius
+    return area, circumference
+
+print("Circle calculations:")
+radius = 5
+area, circumference = calculate_circle(radius)
+print(f"Circle with radius {radius}:")
+print(f"Area: {area:.2f}")
+print(f"Circumference: {circumference:.2f}")
+print()
 
 """ เขียน function ชื่อ create_user_profile ที่มีคุณสมบัติดังนี้:
 
@@ -26,11 +48,25 @@ def calculate_circle(radius):
 return string ที่จัดรูปแบบข้อมูลผู้ใช้
 รูปแบบ: "[username] (age: [age]) - [Premium User / Standard User]"
 
+อย่าลืมเขียนโปรแกรมส่วนของการทดลองใช้งานด้วย เอา 3 ลูกค้า
+print(create_user_profile("Boonchoo", 40))
+print(create_user_profile("Manee"))
+print(create_user_profile("Piti ,23 ,True"))
+
 """
 
 def create_user_profile(username, age=18, premium=False):
     # Your Problem 3 solution
-    pass
+    if premium:
+        user_type = "True"
+    else:
+        user_type = "False"
+
+    return f"{username} (age: {age}) - {user_type}"
+print(create_user_profile("Boonchoo", 40))
+print(create_user_profile("Manee"))
+print(create_user_profile("Piti", 23, True))
+
 
 """ เขียน function ชื่อ analyze_scores ที่มีคุณสมบัติดังนี้:
 
