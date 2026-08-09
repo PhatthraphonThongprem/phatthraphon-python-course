@@ -107,6 +107,7 @@ print()
 def multiply(x, y):
     """Multiplies two numbers"""
     return x * y
+    #return result เป็นการประหยัดตัวแปร
 
 def square(n):
     """Returns the square of a number"""
@@ -116,6 +117,11 @@ print("Using return values in expressions:")
 result = multiply(4, 5) + square(3)
 print(f"multiply(4, 5) + square(3) = {multiply(4, 5)} + {square(3)} = {result}")
 print()
+
+#จงหาผลรันโปรแกรมใน Example 3: ด้านบน
+"""
+
+"""
 
 # =============================================================================
 # PART 4: DEFAULT PARAMETERS
@@ -156,7 +162,7 @@ print(f"power(2, 4) = {power(2, 4)}")  # Fourth power
 print()
 
 # =============================================================================
-# PART 5: VARIABLE SCOPE
+# PART 5: VARIABLE SCOPE ขอบเขตของตัวแปร
 # =============================================================================
 print("\n=== PART 5: VARIABLE SCOPE ===")
 
@@ -167,7 +173,7 @@ counter = 0
 def demonstrate_scope():
     """Demonstrates local vs global scope"""
     # Local variable
-    local_message = "I'm a local variable"
+    local_message = "I'm a local variable" #local ตัวแปรที่อยู่ในฟังก์ชัน
     
     # Accessing global variable
     print(f"Inside function - Global: {global_message}")
