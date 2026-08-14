@@ -21,7 +21,7 @@ print()
 # Example 2: Function that performs a task
 def draw_separator():
     """Draws a line separator"""
-    print("-" * 40)
+    print("-" * 40) # * ต้องตอบให้ได้ว่าเครื่องหมายนี้ทำอะไร
 
 draw_separator()
 print("This is between separators")
@@ -45,7 +45,7 @@ greet_person("Charlie")
 print()
 
 # Example 2: Function with multiple parameters
-def introduce_person(name, age, city):
+def introduce_person(name, age, city): #ใครอยากใช้ฉันต้องใส่ 3 ตัวเท่านั้น
     """Introduces a person with their details"""
     print(f"Hi! My name is {name}.")
     print(f"I am {age} years old.")
@@ -120,7 +120,8 @@ print()
 
 #จงหาผลรันโปรแกรมใน Example 3: ด้านบน
 """
-
+Using return values in expressions:
+multiply(4, 5) + square(3) = 20 + 9 = 29
 """
 
 # =============================================================================
