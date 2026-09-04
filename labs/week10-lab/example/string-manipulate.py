@@ -82,11 +82,11 @@ str2 = 'World!'
 
 # Concatenation
 result = str1 + str2
-print(f"str1 + str2 = {result}")
+print(f"str1 + str2 = {result}") # print : Hello Word!
 
 # Multiplication
 repeat = str1 * 3
-print(f"str1 * 3 = {repeat}")
+print(f"str1 * 3 = {repeat}") #print : Hello Hello Hello
 
 # ===========================
 # 6. APPENDING STRINGS
@@ -97,7 +97,7 @@ greeting = 'hello'
 name = input("Enter your name: ")
 greeting += name
 greeting += ". welcome to pune"
-print(greeting)
+print(greeting) # print : hello patty . welcome to pune
 
 # ===========================
 # 7. ITERATING AND COUNTING
@@ -107,7 +107,7 @@ print("\n=== ITERATING THROUGH STRING ===")
 count = 0
 text = 'Hello World'
 for letter in text:
-    if letter == 'l':
+    if letter == 'l': #นับ l ในข้อความ hello world
         count += 1
 print(f"{count} letters 'l' found in '{text}'")
 
@@ -116,8 +116,8 @@ print(f"{count} letters 'l' found in '{text}'")
 # ===========================
 
 print("\n=== MEMBERSHIP TEST ===")
-print("'a' in 'program':", 'a' in 'program')  # True
-print("'at' not in 'battle':", 'at' not in 'battle')  # False
+print("'a' in 'program':", 'a' in 'program')  # True # print : a in program :...
+print("'at' not in 'battle':", 'at' not in 'battle')  # False #
 
 # ===========================
 # 9. STRING IMMUTABILITY 
@@ -162,7 +162,7 @@ print('''He said, "What's there?"''')
 # Raw strings
 print("\nRaw string example:")
 print("Normal: This is \\x61 \\ngood example")
-print(r"Raw: This is \x61 \ngood example")
+print(r"Raw: This is \x61 \ngood example") # สัญลักษณ์สักอย่างของคอม
 
 # ===========================
 # 11. STRING FORMATTING
@@ -184,7 +184,8 @@ name = 'shankar'
 sal = 20000
 
 # Different format styles
-str1 = '{},{},{}'.format(id_num, name, sal)
+str1 = '{},{},{}'.format(id_num, name, sal) #.format คือ {ค่าที่ 1},{ค่าที่ 2},{ค่าที่ 3}
+str1 = f'{id_num},{name},{sal}'
 print(str1)  # 10,shankar,20000
 
 str2 = '{} - {} - {}'.format(id_num, name, sal)
@@ -200,33 +201,33 @@ print(str3)
 print("\n=== STRING METHODS ===")
 text = "welcome to the world of python"
 
-# Case methods
+# Case methods ตัวพิมพ์
 print(f"Original: {text}")
-print(f"Upper: {text.upper()}")
-print(f"Lower: {text.lower()}")
+print(f"Upper: {text.upper()}") # ทำให้ทุกตัวเป็นตัวใหญ่
+print(f"Lower: {text.lower()}") 
 print(f"Title: {text.title()}")
 print(f"Capitalize: {text.capitalize()}")
 
 # Search methods
-print(f"Find 'world': {text.find('world')}")
-print(f"Count 'o': {text.count('o')}")
-print(f"Starts with 'welcome': {text.startswith('welcome')}")
+print(f"Find 'world': {text.find('world')}") #{text.find('world')} ตรงนี้รีเทิร์นออกมาเป็นตัวเลข
+print(f"Count 'o': {text.count('o')}") #มี o เท่าไหร่จะปริ้นเลขออกมาเลย มันเป็นการนับ str
+print(f"Starts with 'welcome': {text.startswith('welcome')}") #อันนี้จะเป็นการตรวจว่าใช่หรือไม่ มี welcome มั้ย
 print(f"Ends with 'python': {text.endswith('python')}")
 
 # Modification methods
-print(f"Replace 'python' with 'java': {text.replace('python', 'java')}")
-words = text.split()
+print(f"Replace 'python' with 'java': {text.replace('python', 'java')}") # .replace คือ แทนที่คำ
+words = text.split() #.split คือ การแบ่ง .ใช้เมื่อเราต้องการที่จะระเบิดชื่อนามสกุลออกมา
 print(f"Split into words: {words}")
-print(f"Join with '-': {'-'.join(words)}")
+print(f"Join with '-': {'-'.join(words)}") #.join คือ เมื่อมันมีช่องว่างมันจะแทนเป็น - แทน
 
 # Validation methods
 test_str = "Hello123"
 print(f"\nValidation methods for '{test_str}':")
-print(f"isalnum(): {test_str.isalnum()}")
-print(f"isalpha(): {test_str.isalpha()}")
-print(f"isdigit(): {test_str.isdigit()}")
-print(f"isupper(): {test_str.isupper()}")
-print(f"islower(): {test_str.islower()}")
+print(f"isalnum(): {test_str.isalnum()}") #.isalnum ทุกตัวเป็นตัวเลขไหม # ตรงนี้จะให้ผลลัพะ์เป็นใช่หรือไม่หมดเลย T/F
+print(f"isalpha(): {test_str.isalpha()}") #.isalpha ทุกตัวเป็นตัวอักษรไหม
+print(f"isdigit(): {test_str.isdigit()}") #.isdigit ทุกตัวเป็นตัวเลขไหม
+print(f"isupper(): {test_str.isupper()}") #.isupper ในนี้มตัวพิมพ์ใหญ่ไหม
+print(f"islower(): {test_str.islower()}") #.islower ในนี้มีตัวเล็กไหม
 
 # ===========================
 # 13. ORD() AND CHR() FUNCTIONS
@@ -234,8 +235,8 @@ print(f"islower(): {test_str.islower()}")
 
 print("\n=== ORD() AND CHR() FUNCTIONS ===")
 ch = 'R'
-print(f"ord('{ch}') = {ord(ch)}")
-print(f"chr(82) = {chr(82)}")
+print(f"ord('{ch}') = {ord(ch)}") #ord คือ การแปลงอักขระเป็นตัวเลข
+print(f"chr(82) = {chr(82)}") #chr คือ การแปลงตัวเลขเป็นอักขระ
 
 # ASCII table example
 print("\nASCII values for A-Z:")
@@ -286,7 +287,7 @@ print(f"text[-5:-2] = {text[-5:-2]}")  # yth
 # Stride examples
 long_text = "welcome to the world of python"
 print(f"\nSlicing with stride:")
-print(f"Original: {long_text}")
+print(f"Original: {long_text}")       ใเกเสก     
 print(f"text[2:10] = {long_text[2:10]}")      # lcome to
 print(f"text[2:10:2] = {long_text[2:10:2]}")  # loet
 print(f"text[2:13:4] = {long_text[2:13:4]}")  # le
