@@ -1,5 +1,5 @@
 """
-Question 1: Beginner Number Guessing Game
+Question 1: Beginner Number Guessing Game (โปรแกรมทายเลข)
 
 Create a simple number guessing game with these requirements:
 
@@ -25,3 +25,4 @@ Example
     Congratulations! You won in 3 attempts!
 
 """
+
