@@ -1,4 +1,3 @@
-
 """ เขียน function ชื่อ welcome_message ที่มีคุณสมบัติดังนี้:
 
 รับ parameter 2 ตัว คือ name และ course

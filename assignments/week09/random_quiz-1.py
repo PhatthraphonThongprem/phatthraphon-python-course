@@ -1,5 +1,9 @@
 """
+<<<<<<< HEAD
 Question 1: Beginner Number Guessing Game (โปรแกรมทายเลข)
+=======
+Question 1: Beginner Number Guessing Game
+>>>>>>> upstream/main
 
 Create a simple number guessing game with these requirements:
 
@@ -25,4 +29,7 @@ Example
     Congratulations! You won in 3 attempts!
 
 """
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/main
